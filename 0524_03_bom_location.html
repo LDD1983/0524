@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>location</h3>
+    <button type="button" id="myBtn">mtBtn</button>
+    <button type="button" id="myCount">mtCount</button>
+    <p id="myP">
+        button show website
+    </p>
+
+<script>
+    let myBtn = document.getElementById('myBtn');
+   
+    let myP = document.getElementById('myP');
+    let url = window.location.href;
+    console.log('typeof url = ',typeof url);
+    console.log('typeof myP = ',typeof myP);
+    console.log('typeof myBtn = ',typeof myBtn);
+
+    
+
+    
+   
+    
+   
+
+    myBtn.addEventListener('click',function(){
+        console.log('click');
+        console.log(window.location.href);
+        
+     
+        
+        myP.innerText = window.location.href;
+
+        let url = window.location.href;
+        let myPtext = myP.innerText
+        // console.log(myPtext);
+        myPtext = url;
+        myP.innerText = myPtext;        
+    });
+
+</script>
+</body>
+</html>

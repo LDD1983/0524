@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <span id="a">a</span>
+        <span>x</span>
+        <span id="b">b</span>
+        <span>=</span>
+        <span id="c">c</span>
+    </p>
+    
+
+
+    <script>
+        let a = document.getElementById('a');
+        let b = document.getElementById('b');
+        let c = document.getElementById('c');
+        let at = a.innerText
+        let bt = a.innerText
+
+        
+        for (at = 1; at <= 9 ; at++) {
+            for (bt=1 ; bt<=9; bt++) {
+                console.log(at * bt);
+                c.innerText = at * bt          
+            }
+             console.log('');
+        }
+    </script>
+
+</body>
+</html>
